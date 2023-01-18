@@ -8,10 +8,10 @@ jobs:
     - name: 'CMST385' 
       uses: actions/checkout@master
 
-    - name: Setup Node 10.x
+    - name: Setup Node 16.x
       uses: actions/setup-node@v1
       with:
-        node-version: '10.x'
+        node-version: '16.x'
     - name: 'npm install, build, and test'
       run: |
         npm install
@@ -22,4 +22,4 @@ jobs:
       uses: azure/webapps-deploy@v2
       with:
         app-name: 'Cmst385-nparks7'
-        publish-profile: ${{ secrets.azureWebAppCMST385 }}
+        publish-profile: ${{https://cmst385-nparks7.azurewebsites.net/}}
