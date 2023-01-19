@@ -5,7 +5,7 @@ jobs:
     runs-on: windows-latest
     steps:
     # checkout the repo
-    - name: 'CMST385' 
+    - name: 'CMST385-nparks7' 
       uses: actions/checkout@master
 
     - name: Setup Node 16.x
